@@ -115,7 +115,6 @@ des_list=[]
 (kp_initial, desc_initial)=detector.detectAndCompute(img1,mask=np.uint8(mask1))
 R_next=np.eye(3)
 T_next=np.zeros((3,1))
-#t_pos.append(t_f)
 for i in range (0,2):
     print (i)
     img2=np.array(Image.open('%s%06d.png'% (filepath,i)))
